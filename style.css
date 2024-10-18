@@ -3,5 +3,17 @@
 /* p0+m0 */
 padding: 0;
 margin: 0;
-color: red;
+}
+
+body{
+    background: #000;
+}
+
+#nav{
+    display: grid;
+    /* 第一排比例排列 */
+    grid-template-columns: 35% 50% 15%;
+    width: 1200px;
+    background: #333;
+    margin: 100px auto;
 }
