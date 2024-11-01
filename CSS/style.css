@@ -10,6 +10,12 @@ body{
     /* background: #000; */
 }
 /* 導覽列 */
+nav{
+    /* 定位:固定 */
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
 #nav{
     display: grid;
     /* 第一排比例排列 */
@@ -17,8 +23,10 @@ body{
     width: 800px;
     /* background: #333; */
     margin: 35px auto;
-    /* 定位:固定 */
-    position: fixed;
+}
+
+#logo img{
+    width: 200px;
 }
 
 #link{
@@ -45,7 +53,8 @@ a:hover{
 #banner{
     background-image: url(../img/banner.jpg);
     width: 100%;
-    height: 2895px;
+    /* 畫面高度 */
+    height: 100vh;
 }
 
 /* 內容區域 */
@@ -81,6 +90,8 @@ h1{
     border-radius: 5px;
     /* 卡片透明度 */
     box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    /* 調整與底部的間距 */
+    margin-bottom: 20px;
 }
 
 /* 選取內容 */
@@ -111,9 +122,9 @@ h1{
 }
 
 .card p{
-    height: 150px;
+    height: 50px;
     color: #666;
-    font-weight: 100;
+    font-weight: 50;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -137,13 +148,20 @@ h1{
 }
 
 #product{
-    height: 500px;
+    height: 400px;
     width: 800px;
     margin: 0 auto;
-    background-color: #111f36;
+    /* background-color: #111f36; */
     /* 文字對齊:置中(對行內元素調整對齊) */
-    text-align: center;
+    text-align: left;
     position: relative;
+    display: grid;
+    grid-template-columns: 80% 20%;
+
+}
+#product img{
+    width: 400px;
+    border: 8px ;
 }
 
 #info{
@@ -181,5 +199,34 @@ h1{
 
 #idea-pic img{
     width: 100%;
-    bottom: 8px solid #fff;
+    border: 8px solid #fff;
+}
+
+#idea-content{
+    line-height: 4;
+    letter-spacing: 10px;
+    font-size: 18px;
+}
+
+#idea-content a {
+    color: #666;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    transition: 0.5s;
+    font-size: 16px;
+}
+
+#idea-content a:hover{
+    background-color: #333;
+    color: white;
+}
+
+footer{
+    border-image: url(../img/paper.png);
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color:#555;
 }
