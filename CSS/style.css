@@ -1,8 +1,8 @@
 *{
     font-family: 微軟正黑體;
-/* p0+m0 */
-padding: 0;
-margin: 0;
+    /* p0+m0 */
+    padding: 0;
+    margin: 0;
 }
 
 body{
@@ -15,8 +15,8 @@ body{
     grid-template-columns: 30% 50% 20%;
     width: 800px;
     /* background: #333; */
-    margin: 100px auto;
-    /* 定位 */
+    margin: 35px auto;
+    /* 定位:固定 */
     position: fixed;
 }
 
@@ -27,17 +27,20 @@ body{
 }
 
 a{
-    color:aliceblue;
+    color:#C8AFED;
+    /* td文字裝飾:無(沒有底線) */
     text-decoration:none;
     font-size: 20px;
     padding: 0 20px;
+    /* 轉場:秒數s */
     transition: 0.5s;
 }
 
 a:hover{
-    color:blanchedalmond
+    color:#C8AFED;
 }
 
+/* 橫幅 */
 #banner{
     background-image: url(../img/banner.jpg);
     width: 100%;
@@ -79,11 +82,11 @@ h1{
     box-shadow: 0 10px 15px rgba(0,0,0,0.1);
 }
 
-/* 選取器 */
+/* 選取內容 */
 /* 第一個選取 空格 第二個選取 */
 .card img {
     width: 100%;
-    opacity: 0.5s;
+    opacity: 0.5;
     transition: 0.7s;
     height: 200px;
     /* 物件適應 封面(避免圖片壓縮) */
@@ -107,7 +110,7 @@ h1{
 }
 
 .card p{
-    height: 100px;
+    height: 150px;
     color: #666;
     font-weight: 100;
     font-size: 14px;
